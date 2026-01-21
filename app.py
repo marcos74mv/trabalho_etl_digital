@@ -7,7 +7,8 @@ st.set_page_config(page_title="Assistente DW Vendas", layout="wide")
 # =========================
 # CONFIG
 # =========================
-DATA_DIR = Path(r"C:\Users\Marcos Vinicius\Downloads\views-trabalho")
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
 
 FILES = {
     "vendas_nf": "vw_vendas_nf.csv",
